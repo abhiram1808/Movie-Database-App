@@ -29,7 +29,7 @@ class Upcoming extends React.Component {
   })
 
   getUpcomingMoviesResponse = async (page = 1) => {
-    const API_KEY = 'f32b79895b21468afbdd6d5342cbf3da'
+    const API_KEY = '0261ab1fc3d53134591124bb775561f3'
     const apiUrl = `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&language=en-US&page=${page}`
     const response = await fetch(apiUrl)
     const data = await response.json()
